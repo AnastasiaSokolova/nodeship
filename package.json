@@ -1,0 +1,27 @@
+{
+  "name": "nodeship",
+  "version": "1.0.0",
+  "description": "Mentorship project",
+  "main": "app.js",
+  "scripts": {
+    "pretest": "eslint --ignore-path .gitignore . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiaSokolova/nodeship.git"
+  },
+  "author": "Anastasiia Sokolova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnastasiaSokolova/nodeship/issues"
+  },
+  "homepage": "https://github.com/AnastasiaSokolova/nodeship#readme",
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.18.9"
+  }
+}
