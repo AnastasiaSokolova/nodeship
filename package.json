@@ -6,7 +6,8 @@
   "scripts": {
     "pretest": "eslint --ignore-path .gitignore . --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "cli": "node utils/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,17 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
     "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "combined-stream": "^1.0.7",
+    "concat": "^1.0.3",
+    "csvtojson": "^2.0.8",
+    "request": "^2.88.0",
+    "split": "^1.0.1",
+    "stream-combiner": "^0.2.2",
+    "through2": "^3.0.0",
+    "trumpet": "^1.7.2",
+    "winston": "^3.2.1",
+    "yargs": "^13.2.1"
   }
 }
