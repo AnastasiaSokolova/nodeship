@@ -6,7 +6,7 @@
   "scripts": {
     "pretest": "eslint --ignore-path .gitignore . --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon config.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,15 @@
   },
   "homepage": "https://github.com/AnastasiaSokolova/nodeship#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
     "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "winston": "^3.2.1"
   }
 }
