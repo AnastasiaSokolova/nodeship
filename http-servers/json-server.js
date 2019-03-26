@@ -15,5 +15,7 @@ const server = http.createServer((req, res) => {
     res.end(JSON.stringify(product));
 });
 
+const port = process.env.PORT || 3000;
+
 server.listen(3000, () => console.log(`App listening on port ${port}!`));
 

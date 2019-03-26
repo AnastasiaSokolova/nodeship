@@ -20,5 +20,7 @@ const server = http.createServer((req, res) => {
     fs.createReadStream('./index.html', {encoding: 'utf-8'}).pipe(replace).pipe(res);
 });
 
+const port = process.env.PORT || 3000;
+
 server.listen(3000, () => console.log(`App listening on port ${port}!`));
 

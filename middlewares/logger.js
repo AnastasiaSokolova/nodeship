@@ -19,7 +19,7 @@ const logger = createLogger({
 
 
 
-exports.logInfo = function(req, res, next){
+module.exports = function(req, res, next){
     logger.info(`${req.method} ${req.originalUrl}`);
 
     res.on('finish', () => {
